@@ -19,6 +19,6 @@ public class LogIn {
                 _password = Password;
             }
             
-//            LANCE ALVAREZ GIT TEST
+
     }
 
