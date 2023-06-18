@@ -9,6 +9,7 @@ public class LogIn_Interface_Frame extends javax.swing.JFrame {
      */
     public LogIn_Interface_Frame() {
         initComponents();
+        setLocationRelativeTo(null);
     }
    
 
@@ -175,7 +176,8 @@ public class LogIn_Interface_Frame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error! Kindly Enter your Username and Password!");
         }else if (txtUsername.getText().contains("employee") && txtPassword.getText().contains("motorph") ){
             JOptionPane.showMessageDialog(null, "Welcome to MotorPH!");
-            Payslip_EmployeeDits_Frame frame = new Payslip_EmployeeDits_Frame();
+            Option frame = new Option();
+            frame.setLocationRelativeTo(null);
             frame.setVisible(true);
             this.setVisible(false);
         }else if (txtPassword.getText().equals("")){

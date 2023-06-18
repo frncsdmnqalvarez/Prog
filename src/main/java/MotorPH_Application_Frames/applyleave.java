@@ -43,6 +43,7 @@ public class applyleave extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(-1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("NAME");
@@ -231,8 +232,9 @@ public class applyleave extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Payslip_EmployeeDits_Frame payslipFrame = new Payslip_EmployeeDits_Frame();
-        payslipFrame.setVisible(true);
+        Option optionFrame = new Option();
+        optionFrame.setLocationRelativeTo(null);
+        optionFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
